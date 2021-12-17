@@ -6,7 +6,9 @@
            
             session_start();
             $_SESSION["txt_username"]=$username;
-           
+            echo'<script>
+            window.alert("Email hoặc mật khẩu không tồn tại! Đăng nhập thất bại");
+            </script>';
            header("Location: index.php");
            
         }
